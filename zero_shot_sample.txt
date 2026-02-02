@@ -1,0 +1,16 @@
+Perform Named Entity Recognition on the following sentences.
+Use the BIO format with these labels: ORG, LOC, PERS.
+Do NOT return tokens with other labels.
+Return ONLY tokens that are part of a named entity (B-XXX or I-XXX).
+
+Output format:
+token<TAB>entity_label
+
+Preserve sentence boundaries by leaving an empty line between sentences,
+but include only the entity tokens from each sentence.
+Return the entity tokens in the SAME ORDER that they appear in the original text.
+
+If a sentence contains no named entities, output the line:
+NONE NONE
+
+Do not output anything else.
