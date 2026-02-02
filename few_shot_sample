@@ -1,0 +1,28 @@
+Perform Named Entity Recognition on the following sentences.
+Use the BIO format with these labels: ORG, LOC, PER, DATE.
+Do NOT return tokens with other labels.
+Return ONLY tokens that are part of a named entity (B-XXX or I-XXX).
+
+Output format:
+token<TAB>entity_label
+
+Preserve sentence boundaries by leaving an empty line between sentences.
+Return the entity tokens in the SAME ORDER that they appear in the original text.
+
+If a sentence contains no named entities, output the line:
+NONE NONE
+
+Examples:
+
+Sentence:
+Foromo e e bonwa kwa go Lefapha la Kgwebo le Intaseteri
+
+Output:
+Lefapha  B-ORG
+la       I-ORG
+Kgwebo   I-ORG
+le       I-ORG
+Intaseteri I-ORG
+
+Sentence:
+...
